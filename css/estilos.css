@@ -1,0 +1,16 @@
+@media screen and (max-width: 991px) {
+	.card-body p{
+		font-size: 0.8em;
+	}
+	.card-body a{
+		font-size: 0.8em;
+	}
+}
+@media screen and (max-width:  768px) {
+
+}
+
+#navBar a:hover{
+  text-decoration: underline;
+  font-size: 1.01em;
+}
