@@ -1,16 +1,16 @@
 @media screen and (max-width: 991px) {
-	.card-body p{
-		font-size: 0.8em;
-	}
-	.card-body a{
-		font-size: 0.8em;
-	}
-}
-@media screen and (max-width:  768px) {
-
+  .card p {
+    font-size: 0.8em;
+  }
 }
 
-#navBar a:hover{
+@media screen and (max-width: 991px) {
+  .card a {
+    font-size: 0.8em;
+  }
+}
+
+.nav-item a:hover {
   text-decoration: underline;
   font-size: 1.01em;
 }
