@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+.card h2 {
+  font-size: 1rem;
+}
+
 @media screen and (max-width: 991px) {
-  .card p {
+  .card h2 {
     font-size: 0.8em;
   }
 }
