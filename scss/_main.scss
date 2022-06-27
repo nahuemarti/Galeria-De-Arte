@@ -83,13 +83,23 @@
 		font-weight: $v;
 	}
 }
-@media screen and (max-width: 768px) {  
-  .col-2 {
-    text-align: start !important;
-  	font-size: 0.7em!important;
-    min-width: 80px !important;
+.text-danger{
+	font-size: 2rem;
 }
-  .col-10{
+@media screen and (max-width: 768px) {
+  .col-2 {
+    font-size: 0.65em !important;
+    min-width: 80px !important;
+  }
+  .col-10 {
     max-width: calc(100% - 80px) !important;
+    font-size: 0.7em !important;
+    .fs-1{
+    	font-size: 1.1rem !important;
+    }
+   .fs-4{
+   	font-size:1rem !important;
+   }
   }
 }
+

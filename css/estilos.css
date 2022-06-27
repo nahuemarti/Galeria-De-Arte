@@ -120,6 +120,10 @@
   font-weight: 900 !important;
 }
 
+.text-danger {
+  font-size: 2rem;
+}
+
 @media screen and (max-width: 768px) {
   .col-2 {
     font-size: 0.65em !important;
@@ -127,5 +131,12 @@
   }
   .col-10 {
     max-width: calc(100% - 80px) !important;
+    font-size: 0.7em !important;
+  }
+  .col-10 .fs-1 {
+    font-size: 1.1rem !important;
+  }
+  .col-10 .fs-4 {
+    font-size: 1rem !important;
   }
 }
