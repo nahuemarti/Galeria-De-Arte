@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .card h2 {
   font-size: 1rem;
 }
@@ -15,35 +20,102 @@
   }
 }
 
-.nav-item a:hover {
-  text-decoration: underline;
-  font-size: 1.01em;
+@media screen and (max-width: 991px) {
+  .carousel {
+    width: 100% !important;
+  }
+  .wrap {
+    width: 100%;
+  }
+}
+
+@media all and (min-width: 991px) {
+  .navbar .nav-item:hover {
+    text-decoration: underline;
+  }
+  .navbar .nav-item:hover .dropdown-menu {
+    display: block;
+  }
+}
+
+.wrap {
+  max-width: 80%;
+}
+
+.disabled {
+  pointer-events: all !important;
+}
+
+.card {
+  border-radius: 1.5rem !important;
+}
+
+.list-group-item {
+  border-top: 1px solid #c4c4c4 !important;
+  border-right: 1px solid #c4c4c4 !important;
+  border-bottom: 1px solid #c4c4c4 !important;
+  background-color: black !important;
+  color: #fff !important;
+}
+
+.list-group-item:hover {
+  color: #7A90C2 !important;
+}
+
+.list-group-item.active {
+  background-color: #000A1E !important;
+  border-color: #7A90C2 !important;
+  color: #7A90C2 !important;
+}
+
+.list-group-item.disabled {
+  color: #c4c4c4 !important;
+  text-decoration: line-through;
+}
+
+.list-group-item.disabled:hover {
+  color: #FF0000 !important;
+  text-decoration: line-through;
+}
+
+.list-group-item:first-child {
+  border-top-left-radius: unset !important;
+  border-top-right-radius: unset !important;
+}
+
+.list-group-item:last-child {
+  border-bottom-left-radius: unset !important;
+}
+
+.all {
+  font-family: poppins;
+  background-color: #E3E6EC;
 }
 
 .font-light {
-  font-weight: 300;
+  font-weight: 300 !important;
 }
 
 .font-regular {
-  font-weight: 400;
+  font-weight: 400 !important;
 }
 
 .font-medium {
-  font-weight: 500;
+  font-weight: 500 !important;
 }
 
 .font-semi-bold {
-  font-weight: 600;
+  font-weight: 600 !important;
 }
 
 .font-bold {
-  font-weight: 700;
+  font-weight: 700 !important;
 }
 
 .font-extra-bold {
-  font-weight: 800;
+  font-weight: 800 !important;
 }
 
 .font-black {
-  font-weight: 900;
+  font-weight: 900 !important;
 }

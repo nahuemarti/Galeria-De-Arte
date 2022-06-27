@@ -1,3 +1,7 @@
+*{
+	margin: 0;
+	padding: 0;	
+}
 .card{
 	h2{
 		font-size: 1rem;
@@ -11,14 +15,68 @@
 		}
 	}	
 }
-.nav-item{
-	a{
-		&:hover{
-			text-decoration: underline;
-  			font-size: 1.01em;
-
+@media screen and (max-width: 991px){
+	.carousel {
+		width: 100% !important;
+	}
+	.wrap{
+		width: 100%;
+	}
+}
+@media all and (min-width: 991px){
+	.navbar{
+		.nav-item{
+			&:hover{
+				text-decoration: underline;
+				& .dropdown-menu{ 
+					display: block; 
+				}
+			}
 		}
 	}
+}
+.wrap{
+	max-width: 80%;
+}
+.disabled {
+	pointer-events: all !important;
+}
+.card{
+	border-radius: 1.5rem !important;
+}
+.list-group-item{
+    border-top: 1px solid #c4c4c4 !important;
+    border-right: 1px solid #c4c4c4 !important;
+    border-bottom: 1px solid #c4c4c4 !important;
+    background-color: black !important;
+    color: #fff !important;
+    &:hover{
+    color: #7A90C2 !important;
+    }
+  	&.active {
+  	background-color: #000A1E !important;
+  	border-color:  #7A90C2 !important;
+  	color: #7A90C2 !important;
+  	}
+  	&.disabled {
+  	color: #c4c4c4 !important;
+  	text-decoration: line-through;
+  	&:hover{
+  	color: #FF0000 !important;
+  	text-decoration: line-through;
+  	}
+  	}
+  	&:first-child{
+  	border-top-left-radius: unset !important;
+    border-top-right-radius: unset !important;
+  	}
+  	&:last-child{
+  	border-bottom-left-radius: unset !important;
+  	}
+}
+.all{
+	font-family: poppins;
+	background-color: #E3E6EC;
 }
 @each $k, $v in $fuentes{
 	.font-#{$k}{
