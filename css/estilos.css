@@ -119,3 +119,12 @@
 .font-black {
   font-weight: 900 !important;
 }
+
+@media screen and (max-width: 768px) {
+  .col-2 {
+    min-width: 130px !important;
+  }
+  .col-10 {
+    max-width: calc(100% - 130px) !important;
+  }
+}
