@@ -85,9 +85,11 @@
 }
 @media screen and (max-width: 768px) {  
   .col-2 {
-    min-width: 130px !important;
+    text-align: start !important;
+  	font-size: 0.7em!important;
+    min-width: 80px !important;
 }
   .col-10{
-    max-width: calc(100% - 130px) !important;
+    max-width: calc(100% - 80px) !important;
   }
 }

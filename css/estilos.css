@@ -122,9 +122,10 @@
 
 @media screen and (max-width: 768px) {
   .col-2 {
-    min-width: 130px !important;
+    font-size: 0.65em !important;
+    min-width: 80px !important;
   }
   .col-10 {
-    max-width: calc(100% - 130px) !important;
+    max-width: calc(100% - 80px) !important;
   }
 }
